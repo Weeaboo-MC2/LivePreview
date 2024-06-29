@@ -1,24 +1,33 @@
-//
-//  ContentView.swift
-//  Pishoot3
-//
-//  Created by Yuriko AIshinselo on 27/06/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var cameraViewModel = CameraViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            CameraPreviewView(viewModel: cameraViewModel)
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                Spacer()
+                ZStack{
+                    Rectangle()
+                        .frame(height: UIScreen.main.bounds.height * 0.15)
+                        .foregroundColor(.black)
+//                    TakePictureButton()
+                }
+                
+            }.ignoresSafeArea()
         }
-        .padding()
+        .onAppear {
+            cameraViewModel.startSession()
+        }
+        .onDisappear {
+            cameraViewModel.stopSession()
+        }
     }
 }
-
 #Preview {
     ContentView()
 }
+

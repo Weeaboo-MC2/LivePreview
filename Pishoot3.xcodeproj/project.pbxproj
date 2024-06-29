@@ -11,7 +11,41 @@
 		E9E5A3FA2C2DAAFD005EB61A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5A3F92C2DAAFD005EB61A /* ContentView.swift */; };
 		E9E5A3FC2C2DAAFE005EB61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E5A3FB2C2DAAFE005EB61A /* Assets.xcassets */; };
 		E9E5A3FF2C2DAAFE005EB61A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E5A3FE2C2DAAFE005EB61A /* Preview Assets.xcassets */; };
+		E9E5A4062C2DAB14005EB61A /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5A4052C2DAB14005EB61A /* CameraViewModel.swift */; };
+		E9E5A40B2C2DAB5E005EB61A /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5A40A2C2DAB5E005EB61A /* WatchConnectivityManager.swift */; };
+		E9E5A4132C2DAB72005EB61A /* PishootWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5A4122C2DAB72005EB61A /* PishootWatchApp.swift */; };
+		E9E5A4152C2DAB72005EB61A /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5A4142C2DAB72005EB61A /* WatchContentView.swift */; };
+		E9E5A4172C2DAB74005EB61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E5A4162C2DAB74005EB61A /* Assets.xcassets */; };
+		E9E5A41A2C2DAB74005EB61A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E5A4192C2DAB74005EB61A /* Preview Assets.xcassets */; };
+		E9E5A41D2C2DAB74005EB61A /* PishootWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E9E5A4102C2DAB72005EB61A /* PishootWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9E5A4232C2DAF9E005EB61A /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5A4222C2DAF9E005EB61A /* CameraPreview.swift */; };
+		E9E5A4242C2DB229005EB61A /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5A40A2C2DAB5E005EB61A /* WatchConnectivityManager.swift */; };
+		E9E5A4282C2EBD70005EB61A /* TakePictureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5A4272C2EBD70005EB61A /* TakePictureButton.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9E5A41B2C2DAB74005EB61A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E5A3EC2C2DAAFD005EB61A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E5A40F2C2DAB72005EB61A;
+			remoteInfo = "PishootWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9E5A4212C2DAB74005EB61A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E9E5A41D2C2DAB74005EB61A /* PishootWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E9E5A3F42C2DAAFD005EB61A /* Pishoot3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pishoot3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +53,26 @@
 		E9E5A3F92C2DAAFD005EB61A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9E5A3FB2C2DAAFE005EB61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E5A3FE2C2DAAFE005EB61A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9E5A4052C2DAB14005EB61A /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		E9E5A40A2C2DAB5E005EB61A /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		E9E5A4102C2DAB72005EB61A /* PishootWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PishootWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E5A4122C2DAB72005EB61A /* PishootWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PishootWatchApp.swift; sourceTree = "<group>"; };
+		E9E5A4142C2DAB72005EB61A /* WatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
+		E9E5A4162C2DAB74005EB61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9E5A4192C2DAB74005EB61A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9E5A4222C2DAF9E005EB61A /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		E9E5A4272C2EBD70005EB61A /* TakePictureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePictureButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E9E5A3F12C2DAAFD005EB61A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E5A40D2C2DAB72005EB61A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,7 +85,9 @@
 		E9E5A3EB2C2DAAFD005EB61A = {
 			isa = PBXGroup;
 			children = (
+				E9E5A4092C2DAB51005EB61A /* Shared */,
 				E9E5A3F62C2DAAFD005EB61A /* Pishoot3 */,
+				E9E5A4112C2DAB72005EB61A /* PishootWatch Watch App */,
 				E9E5A3F52C2DAAFD005EB61A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E5A3F42C2DAAFD005EB61A /* Pishoot3.app */,
+				E9E5A4102C2DAB72005EB61A /* PishootWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,10 +104,13 @@
 		E9E5A3F62C2DAAFD005EB61A /* Pishoot3 */ = {
 			isa = PBXGroup;
 			children = (
+				E9E5A4262C2EBD56005EB61A /* View Component */,
 				E9E5A3F72C2DAAFD005EB61A /* Pishoot3App.swift */,
 				E9E5A3F92C2DAAFD005EB61A /* ContentView.swift */,
 				E9E5A3FB2C2DAAFE005EB61A /* Assets.xcassets */,
 				E9E5A3FD2C2DAAFE005EB61A /* Preview Content */,
+				E9E5A4052C2DAB14005EB61A /* CameraViewModel.swift */,
+				E9E5A4222C2DAF9E005EB61A /* CameraPreview.swift */,
 			);
 			path = Pishoot3;
 			sourceTree = "<group>";
@@ -67,6 +123,41 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E9E5A4092C2DAB51005EB61A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E9E5A40A2C2DAB5E005EB61A /* WatchConnectivityManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E9E5A4112C2DAB72005EB61A /* PishootWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				E9E5A4122C2DAB72005EB61A /* PishootWatchApp.swift */,
+				E9E5A4142C2DAB72005EB61A /* WatchContentView.swift */,
+				E9E5A4162C2DAB74005EB61A /* Assets.xcassets */,
+				E9E5A4182C2DAB74005EB61A /* Preview Content */,
+			);
+			path = "PishootWatch Watch App";
+			sourceTree = "<group>";
+		};
+		E9E5A4182C2DAB74005EB61A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E9E5A4192C2DAB74005EB61A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9E5A4262C2EBD56005EB61A /* View Component */ = {
+			isa = PBXGroup;
+			children = (
+				E9E5A4272C2EBD70005EB61A /* TakePictureButton.swift */,
+			);
+			path = "View Component";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,14 +168,33 @@
 				E9E5A3F02C2DAAFD005EB61A /* Sources */,
 				E9E5A3F12C2DAAFD005EB61A /* Frameworks */,
 				E9E5A3F22C2DAAFD005EB61A /* Resources */,
+				E9E5A4212C2DAB74005EB61A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9E5A41C2C2DAB74005EB61A /* PBXTargetDependency */,
+			);
+			name = Pishoot3;
+			productName = Pishoot3;
+			productReference = E9E5A3F42C2DAAFD005EB61A /* Pishoot3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9E5A40F2C2DAB72005EB61A /* PishootWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E5A41E2C2DAB74005EB61A /* Build configuration list for PBXNativeTarget "PishootWatch Watch App" */;
+			buildPhases = (
+				E9E5A40C2C2DAB72005EB61A /* Sources */,
+				E9E5A40D2C2DAB72005EB61A /* Frameworks */,
+				E9E5A40E2C2DAB72005EB61A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Pishoot3;
-			productName = Pishoot3;
-			productReference = E9E5A3F42C2DAAFD005EB61A /* Pishoot3.app */;
+			name = "PishootWatch Watch App";
+			productName = "PishootWatch Watch App";
+			productReference = E9E5A4102C2DAB72005EB61A /* PishootWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,6 +208,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					E9E5A3F32C2DAAFD005EB61A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E9E5A40F2C2DAB72005EB61A = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -116,6 +229,7 @@
 			projectRoot = "";
 			targets = (
 				E9E5A3F32C2DAAFD005EB61A /* Pishoot3 */,
+				E9E5A40F2C2DAB72005EB61A /* PishootWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +244,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9E5A40E2C2DAB72005EB61A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E5A41A2C2DAB74005EB61A /* Preview Assets.xcassets in Resources */,
+				E9E5A4172C2DAB74005EB61A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +260,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E5A4282C2EBD70005EB61A /* TakePictureButton.swift in Sources */,
 				E9E5A3FA2C2DAAFD005EB61A /* ContentView.swift in Sources */,
 				E9E5A3F82C2DAAFD005EB61A /* Pishoot3App.swift in Sources */,
+				E9E5A4062C2DAB14005EB61A /* CameraViewModel.swift in Sources */,
+				E9E5A4232C2DAF9E005EB61A /* CameraPreview.swift in Sources */,
+				E9E5A40B2C2DAB5E005EB61A /* WatchConnectivityManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E5A40C2C2DAB72005EB61A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E5A4152C2DAB72005EB61A /* WatchContentView.swift in Sources */,
+				E9E5A4242C2DB229005EB61A /* WatchConnectivityManager.swift in Sources */,
+				E9E5A4132C2DAB72005EB61A /* PishootWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9E5A41C2C2DAB74005EB61A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9E5A40F2C2DAB72005EB61A /* PishootWatch Watch App */;
+			targetProxy = E9E5A41B2C2DAB74005EB61A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E9E5A4002C2DAAFE005EB61A /* Debug */ = {
@@ -267,6 +412,7 @@
 		E9E5A4032C2DAAFE005EB61A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,6 +421,8 @@
 				DEVELOPMENT_TEAM = 74HCH446S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "I want to use your camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,6 +444,7 @@
 		E9E5A4042C2DAAFE005EB61A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +453,8 @@
 				DEVELOPMENT_TEAM = 74HCH446S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "I want to use your camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,6 +470,66 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9E5A41F2C2DAB74005EB61A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PishootWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 74HCH446S4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PishootWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Yuriko.Pishoot3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yuriko.Pishoot3.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		E9E5A4202C2DAB74005EB61A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PishootWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 74HCH446S4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PishootWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Yuriko.Pishoot3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yuriko.Pishoot3.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
 			};
 			name = Release;
 		};
@@ -339,6 +550,15 @@
 			buildConfigurations = (
 				E9E5A4032C2DAAFE005EB61A /* Debug */,
 				E9E5A4042C2DAAFE005EB61A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E5A41E2C2DAB74005EB61A /* Build configuration list for PBXNativeTarget "PishootWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E5A41F2C2DAB74005EB61A /* Debug */,
+				E9E5A4202C2DAB74005EB61A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
